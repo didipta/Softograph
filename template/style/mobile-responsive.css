@@ -1,37 +1,7 @@
 @media (max-width: 600px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-image: var(--background-color);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 20px 0;
-  }
-
-  .contact-btn {
-    width: 300px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    text-align: center;
-  }
-
-  .dropdown {
-    position: static;
-    box-shadow: none;
-  }
-
-  .dropdown a {
-    padding: 10px;
+  .title-section {
+    font-size: 14px;
+    padding: 40px 10px;
+ 
   }
 }
