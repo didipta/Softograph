@@ -73,3 +73,43 @@ $(".slider-one").slick({
   nextArrow: '<i class="fas fa-chevron-right right"></i>',
   prevArrow: '<i class="fas fa-chevron-left left"></i>',
 });
+
+$(document).ready(function () {
+  const slider = $(".slider-vertical");
+
+  slider.slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
+  });
+
+  // Custom mouse scroll handling
+  slider.on("wheel", function (e) {
+    e.preventDefault();
+    if (e.originalEvent.deltaY < 0) {
+      // Scroll up
+      slider.slick("slickPrev");
+    } else {
+      // Scroll down
+      slider.slick("slickNext");
+    }
+  });
+
+  // Prevent slider from blocking page scroll when it reaches its ends
+  slider.on("afterChange", function (event, slick, currentSlide) {
+    const totalSlides = slick.slideCount;
+
+    if (currentSlide === 0 && slick.slickPrev) {
+      $(window).off("wheel");
+    } else if (currentSlide === totalSlides - 1 && slick.slickNext) {
+      $(window).off("wheel");
+    } else {
+      $(window).on("wheel");
+    }
+  });
+});

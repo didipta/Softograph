@@ -445,7 +445,7 @@ body {
   width: 200px;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: none;
   padding: 10px 10px 10px 0px;
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -550,4 +550,37 @@ body {
 
 .Designed {
   width: 100%;
+}
+.image-bg {
+  background-image: url(../images/image\ 18.png);
+  background-size: cover;
+}
+.Code {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 20px;
+}
+.Code img {
+  width: 100%;
+  padding: 50px;
+}
+.Code .section-title-all
+{
+  margin-bottom: 30px;
+}
+.Code .section-title-all p {
+  max-width: 600px;
+  width: 100%;
+  font-size: var(--h6-font-size);
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 20px;
+}
+.slider-vertical {
+  max-height: 500px;
+  height: 100%;
 }

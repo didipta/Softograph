@@ -85,5 +85,23 @@
       border-radius: var(--border-radius);
     }
 
+    .Code {
+     
+      grid-template-columns: 1fr;
+     
+    }
+    .Code img {
+      width: 100%;
+      padding: 0px;
+    }
+    .Code .section-title-all
+    {
+      margin-bottom: 10px;
+    }
+    .Code .section-title-all p {
+      max-width: 400px;
+  
+    }
+
   }
   
