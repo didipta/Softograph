@@ -2,17 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-column">
-          <div class="footer-logo">
+    <footer className="footer">
+      <div className="footer-container container">
+        <div className="footer-column">
+          <div className="footer-logo">
             <img src="images/logo.png" alt="Softograph Logo" />
           </div>
           <p>Address: House # 52 Road-04, Dhaka 1230</p>
           <p>Phone: +88 01911-082908</p>
           <p>Copyright © 2024 Softograph</p>
         </div>
-        <div class="footer-column">
+        <div className="footer-column">
           <h4>Offerings</h4>
           <ul>
             <li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div className="footer-column">
           <h4>Solutions</h4>
           <ul>
             <li>
@@ -46,7 +46,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div className="footer-column">
           <h4>Company</h4>
           <ul>
             <li>
@@ -60,22 +60,22 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div className="footer-column">
           <h4>Follow Us</h4>
-          <ul class="social-links">
+          <ul className="social-links">
             <li>
               <a href="#">
-                <i class="fab fa-facebook"></i> Facebook
+                <i className="fab fa-facebook"></i> Facebook
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fab fa-linkedin"></i> LinkedIn
+                <i className="fab fa-linkedin"></i> LinkedIn
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fab fa-twitter"></i> Twitter
+                <i className="fab fa-twitter"></i> Twitter
               </a>
             </li>
           </ul>

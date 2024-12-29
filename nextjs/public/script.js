@@ -28,8 +28,8 @@ $(".slider").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
-  nextArrow: '<i class="fas fa-chevron-right right"></i>',
-  prevArrow: '<i class="fas fa-chevron-left left"></i>',
+  nextArrow: '<span class=" right">></i>',
+  prevArrow: '<span class=" left"><</i>',
   responsive: [
     {
       breakpoint: 1200,
@@ -70,8 +70,8 @@ $(".slider-one").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
-  nextArrow: '<i class="fas fa-chevron-right right"></i>',
-  prevArrow: '<i class="fas fa-chevron-left left"></i>',
+  nextArrow: '<span class=" right">></i>',
+  prevArrow: '<span class=" left"><</i>',
 });
 
 $(document).ready(function () {

@@ -2,10 +2,10 @@ import React from "react";
 
 const Designedfor = ({ designedForYou }) => {
   return (
-    <section class="section-div-common">
-      <div class="scetion-left-side">Case Studies</div>
-      <div class="container">
-        <div class="section-title-all">
+    <section className="section-div-common">
+      <div className="scetion-left-side">Case Studies</div>
+      <div className="container">
+        <div className="section-title-all">
           <h2>
             Designed for you to get <br /> more simple
           </h2>
@@ -13,7 +13,7 @@ const Designedfor = ({ designedForYou }) => {
         <img
           src={designedForYou?.imageSrc}
           alt="Designed for you to get more simple"
-          class="Designed"
+          className="Designed"
         />
       </div>
     </section>

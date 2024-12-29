@@ -1,33 +1,37 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faChevronCircleLeft,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const PurposeBuilt = ({ purposeBuiltDigitalSolutions }) => {
   return (
     <section
-      class="section-div-common"
+      className="section-div-common"
       style={{
         paddingBottom: "80px",
       }}
     >
-      <div class="scetion-left-side">Case Studies</div>
-      <div class="container">
-        <div class="section-title-all">
+      <div className="scetion-left-side">Case Studies</div>
+      <div className="container">
+        <div className="section-title-all">
           <h2>
             Purpose-Built <br />
             Digital Solutions
           </h2>
         </div>
       </div>
-      <div class="slider-container">
-        <div class="slider-one">
+      <div className="slider-container">
+        <div className="slider-one">
           {purposeBuiltDigitalSolutions?.slides.map((solution, index) => (
             <div>
-              <div class="slider-one-slide">
+              <div className="slider-one-slide">
                 <div>
                   <img src={solution?.imgSrc} alt="Slide 1" />
                 </div>
-                <div class=" slide-one-contain">
+                <div className=" slide-one-contain">
                   <span>{solution?.spanText}</span>
                   <p>{solution?.description}</p>
                   <button>

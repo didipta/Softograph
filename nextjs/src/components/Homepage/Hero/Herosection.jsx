@@ -20,12 +20,10 @@ const Herosection = ({ heroSection }) => {
             </h1>
           </div>
           <div className="hero-footer">
-            <p className="hero-text">
-              {heroSection?.heroFooter?.text} 
-            </p>
+            <p className="hero-text">{heroSection?.heroFooter?.text}</p>
             <div>
               {heroSection?.heroFooter?.logos.map((image, index) => (
-                <img src={image} alt="hero-footer" />
+                <img src={image} alt="hero-footer" key={index} />
               ))}
             </div>
           </div>

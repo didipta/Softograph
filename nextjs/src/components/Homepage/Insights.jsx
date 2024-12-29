@@ -2,24 +2,24 @@ import React from "react";
 
 const Insights = ({ insightsAndPerspectives }) => {
   return (
-    <section class="section-div-common">
-      <div class="scetion-left-side">Case Studies</div>
-      <div class="container">
-        <div class="section-title-all">
+    <section className="section-div-common">
+      <div className="scetion-left-side">Case Studies</div>
+      <div className="container">
+        <div className="section-title-all">
           <h2>
             Insights & <br />
             Perspectives
           </h2>
         </div>
       </div>
-      <div class="slider-container">
-        <div class="slider">
+      <div className="slider-container">
+        <div className="slider">
           {insightsAndPerspectives?.slides.map((insight, index) => (
-            <div class="slide-2">
+            <div className="slide-2">
               <div>
                 <img src={insight?.imgSrc} alt="Slide 1" />
               </div>
-              <div class=" slide-2-contain">
+              <div className=" slide-2-contain">
                 <span>{insight?.date}</span>
                 <p>{insight?.text}</p>
               </div>

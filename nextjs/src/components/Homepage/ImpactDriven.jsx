@@ -11,12 +11,12 @@ const ImpactDriven = ({ impactDrivenNarratives }) => {
           </h2>
         </div>
       </div>
-      <div class="slider-container">
-        <div class="slider">
+      <div className="slider-container">
+        <div className="slider">
           {impactDrivenNarratives?.slides.map((narrative, index) => (
-            <div class="slide">
+            <div className="slide">
               <img src={narrative?.imgSrc} alt="Slide 1" />
-              <div class="caption">{narrative?.caption}</div>
+              <div className="caption">{narrative?.caption}</div>
             </div>
           ))}
         </div>
