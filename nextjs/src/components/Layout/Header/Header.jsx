@@ -1,17 +1,35 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Scroll effect to add 'scrolled' class to navbar when user scrolls down
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleMenuToggle = () => {
     setMenuActive(!menuActive);
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container container">
         {/* Mobile Menu Toggle */}
         <button
@@ -36,7 +54,7 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className={`nav-menu`} id="nav-menu">
+        <div className="nav-menu" id="nav-menu">
           <ul
             className={`nav-links ${menuActive ? "active" : ""}`}
             id="nav-links"

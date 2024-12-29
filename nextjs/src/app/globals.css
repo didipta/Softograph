@@ -431,6 +431,7 @@ html {
 .slider-one-slide {
   height: 332px;
   margin: 0 16px;
+  padding-bottom: 40px;
   background-color: #070b16;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -460,11 +461,10 @@ html {
 }
 
 .slider-one-slide .slide-one-contain button {
-  width: 200px;
+  width: 100px;
   background-color: transparent;
   color: white;
   border: none;
-  padding: 10px 10px 10px 0px;
   border-radius: var(--border-radius);
   cursor: pointer;
   text-transform: uppercase;
@@ -473,9 +473,10 @@ html {
 
 /* Footer Styling */
 .footer {
+  background-image: var(--background-color);
   color: #ffffff; /* White text for contrast */
   padding: 100px 20px; /* Increase padding for a spacious layout */
-  margin-top: 80px;
+  padding-top: 80px;
   font-family: "Arial", sans-serif; /* Clean, readable font */
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
 }

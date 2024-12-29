@@ -1,0 +1,167 @@
+{
+    "heroSection": {
+      "ambientCanvasClass": "content--canvas",
+      "heroText": "We Are Softograph",
+      "heroTitle": "Innovation through Intelligent Solutions",
+      "heroFooter": {
+        "text": "Trusted by data teams at world's leading companies",
+        "logos": [
+          "images/logo-1.png",
+          "images/logo-2.png",
+          "images/logo-3.png",
+          "images/Rectangle 340.png"
+        ]
+      }
+    },
+    "sectionOne": {
+      "title": "Unlock your business's potential with Softograph's tailored technology solutions and expert advisory services, designed to drive innovation and ensure success.",
+      "subtitle": "We put information and knowledge into action."
+    },
+    "impactDrivenNarratives": {
+      "sectionTitle": "Impact-Driven Narratives",
+      "slides": [
+        {
+          "imgSrc": "images/img-cover (1).png",
+          "caption": "Title of the Case Study Will Go Here"
+        },
+        {
+          "imgSrc": "images/img-cover (2).png",
+          "caption": "Title of the Case Study Will Go Here"
+        },
+        {
+          "imgSrc": "images/img-cover.png",
+          "caption": "Title of the Case Study Will Go Here"
+        },
+        {
+          "imgSrc": "images/img-cover (1).png",
+          "caption": "Title of the Case Study Will Go Here"
+        },
+        {
+          "imgSrc": "images/img-cover.png",
+          "caption": "Title of the Case Study Will Go Here"
+        },
+        {
+          "imgSrc": "images/img-cover (1).png",
+          "caption": "Title of the Case Study Will Go Here"
+        }
+      ]
+    },
+    "blueprintToSuccess": {
+      "sectionTitle": "Blueprint to Success",
+      "slides": [
+        {
+          "imgSrc": "images/Layer 1 (1).png",
+          "spanText": "01",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        },
+        {
+          "imgSrc": "images/Layer 1.png",
+          "spanText": "02",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        },
+        {
+          "imgSrc": "images/Layer 2 (1).png",
+          "spanText": "03",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        },
+        {
+          "imgSrc": "images/Layer 1 (1).png",
+          "spanText": "01",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        },
+        {
+          "imgSrc": "images/Layer 1.png",
+          "spanText": "02",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        },
+        {
+          "imgSrc": "images/Layer 2 (1).png",
+          "spanText": "03",
+          "title": "Business Process Analysis",
+          "description": "Our process starts with an in-depth understanding of your business practices."
+        }
+      ]
+    },
+    "codeThatKnowsYou": {
+      "sectionTitle": "Code That Knows You",
+      "description": "Intelligent Code, Seamless Integration",
+      "text": "Experience the synergy of bespoke software solutions and seamless integration. Intelligent code crafted to adapt to unique needs, ensuring efficiency and innovation at every turn.",
+      "images": [
+        "images/Layer 2.png"
+      ]
+    },
+    "designedForYou": {
+      "sectionTitle": "Designed for you to get more simple",
+      "imageSrc": "images/Mask group.png"
+    },
+    "insightsAndPerspectives": {
+      "sectionTitle": "Insights & Perspectives",
+      "slides": [
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        },
+        {
+          "imgSrc": "images/image 19 (2).png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        },
+        {
+          "imgSrc": "images/image 19.png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        },
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        },
+        {
+          "imgSrc": "images/image 19 (2).png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        },
+        {
+          "imgSrc": "images/image 19.png",
+          "date": "20 July",
+          "text": "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet"
+        }
+      ]
+    },
+    "purposeBuiltDigitalSolutions": {
+      "sectionTitle": "Purpose-Built Digital Solutions",
+      "slides": [
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "spanText": "INSPECTO",
+          "description": "Transform field operations with Inspecto's comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
+          "buttonText": "Learn More"
+        },
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "spanText": "INSPECTO",
+          "description": "Transform field operations with Inspecto's comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
+          "buttonText": "Learn More"
+        },
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "spanText": "INSPECTO",
+          "description": "Transform field operations with Inspecto's comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
+          "buttonText": "Learn More"
+        },
+        {
+          "imgSrc": "images/image 19 (1).png",
+          "spanText": "INSPECTO",
+          "description": "Transform field operations with Inspecto's comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
+          "buttonText": "Learn More"
+        }
+      ]
+    }
+  }
+  

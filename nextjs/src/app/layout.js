@@ -4,8 +4,9 @@ import "./globals.css";
 import "./table-responsive.css";
 import "./mobile-responsive.css";
 import Main from "@/components/Layout/Main";
-import Head from "next/head";
-import Link from "next/link";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Script from "next/script";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
         <Main>{children}</Main>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="./shift.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+        <Script src="./script.js"></Script>
       </body>
     </html>
   );
