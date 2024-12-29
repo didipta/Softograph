@@ -72,5 +72,18 @@
       margin-top: -80px;
       
     }
+
+
+    .slider-one-slide {
+      max-height: 700px;
+      height: 100%;
+      background-color: #070b16;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+    }
+
   }
   

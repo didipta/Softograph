@@ -354,7 +354,6 @@ body {
   color: #000;
   overflow: hidden;
   border-radius: var(--border-radius);
-  
 }
 .slide-2 img {
   width: 100%;
@@ -362,17 +361,192 @@ body {
   margin: 0 auto;
   object-fit: cover;
 }
-.slide-2  .slide-2-contain 
-{
+.slide-2 .slide-2-contain {
   padding: 20px;
 }
-.slide-2  .slide-2-contain span {
+.slide-2 .slide-2-contain span {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-.slide-2  .slide-2-contain p {
+.slide-2 .slide-2-contain p {
   font-weight: 600;
   margin: 10px 0;
 }
+
+.slide-3 {
+  margin: 0 16px;
+  padding: 40px;
+  max-width: 381px;
+  width: 100%;
+  background-color: #070b16;
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 12px 0px #6a6a6a1d;
+}
+
+.slide-3 .slide-3-contain {
+  display: flex;
+  justify-content: space-between;
+}
+.slide-3 .slide-3-contain span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ed6d51;
+}
+.slide-3 .slide-3-contain-title {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slide-3 .slide-3-contain-title h4 {
+  max-width: 200px;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 200;
+}
+.slider-one-slide {
+  height: 332px;
+  margin: 0 16px;
+  background-color: #070b16;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+.slider-one-slide img {
+  width: 100%;
+  height: 332px;
+  object-fit: fill;
+}
+.slider-one-slide .slide-one-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.slider-one-slide .slide-one-contain span {
+  font-size: 26px;
+  font-weight: 200;
+}
+.slider-one-slide .slide-one-contain p {
+  font-weight: 300;
+  padding-right: 80px;
+  letter-spacing: 0.1rem;
+}
+
+.slider-one-slide .slide-one-contain button {
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px 10px 0px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #0a0e17; /* Dark background */
+  color: #ffffff; /* White text for contrast */
+  padding: 100px 20px; /* Increase padding for a spacious layout */
+  margin-top: 80px;
+  font-family: "Arial", sans-serif; /* Clean, readable font */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  row-gap: 40px; /* Add vertical spacing between rows */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 20px; /* Spacing below the logo */
+}
+
+.footer-column h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fcfcfc; /* Accent color for headers */
+  position: relative;
+  text-transform: uppercase; /* Professional touch with uppercase */
+}
+
+.footer-column h4::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #d7d7d7; /* Matching accent line */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 20px; /* Increased spacing for better readability */
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  opacity: 0.9; /* Subtle fade effect */
+}
+
+.footer-column ul li a:hover {
+  color: #afafaf;
+  opacity: 1; /* Restore full opacity on hover */
+  transform: translateX(5px); /* Slight movement effect */
+}
+
+.footer-column p {
+  font-size: 16px;
+  line-height: 1.6; /* Enhanced readability with line spacing */
+  color: rgba(255, 255, 255, 0.8); /* Softer text for less focus */
+}
+
+.social-links i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.8); /* Softer initial color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00aaff; /* Highlight effect */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+
+

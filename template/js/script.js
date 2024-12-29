@@ -37,8 +37,7 @@ $(".slider").slick({
         slidesToShow: 2,
         centerPadding: "60px",
       },
-    }
-    ,
+    },
     {
       breakpoint: 1024,
       settings: {
@@ -61,4 +60,16 @@ $(".slider").slick({
       },
     },
   ],
+});
+$(".slider-one").slick({
+  centerMode: true,
+  centerPadding: "80px",
+  infinite: true,
+  slidesToShow: 1,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  nextArrow: '<i class="fas fa-chevron-right right"></i>',
+  prevArrow: '<i class="fas fa-chevron-left left"></i>',
 });
