@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/mobile-responsive.css" />
+    <link rel="stylesheet" href="/style/table-responsive.css" />
+    <title>Responsive Navbar with Dropdown</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div class="logo">
+          <a href="#">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="#">Offerings</a>
+              <ul class="dropdown">
+                <li><a href="#">Code that Knows You</a></li>
+                <li><a href="#">Unlocking Frontier Tech</a></li>
+                <li><a href="#">Strategies that do Wonders</a></li>
+                <li><a href="#">Decisions made Easy</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+          <button class="contact-btn">Get Started</button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <!-- Hero Section -->
+    <section class="hero"></section>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
