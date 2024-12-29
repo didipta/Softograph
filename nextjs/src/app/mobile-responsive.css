@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  .title-section {
+    font-size: 14px;
+    padding: 40px 10px;
+ 
+  }
+
+  .section-div-common {
+    margin-top: 40px;
+  }
+}

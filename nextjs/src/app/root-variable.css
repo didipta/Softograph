@@ -1,0 +1,71 @@
+
+/* General Variables for All Devices */
+:root {
+  --background-color: linear-gradient(180deg, #11192f 0%, #03050a 100%);
+  --primary-color: #007bff;
+  --primary-font-size: 14px;
+  --small-font-size: 12px;
+  --border-radius: 8px;
+  --container: calc(100% - 30px);
+  --logo-width: 150px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --container: calc(100% - 15px);
+    --logo-width: 120px; /* Adjusted for smaller screens */
+    --h1-font-size: 36px; /* Larger font size for headings */
+    --h2-font-size: 24px; /* Larger font size for subheadings */
+    --h6-font-size: 14px; /* Larger font size for small headings */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  :root {
+    --container: calc(100% - 30px);
+    --logo-width: 150px; /* Balanced size for small devices */
+    --h1-font-size: 46px; /* Larger font size for headings */
+    --h2-font-size: 28px; /* Larger font size for subheadings */
+    --h6-font-size: 15px; /* Larger font size for small headings */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --container: calc(100% - 59px);
+    --logo-width: 160px; /* Slightly larger for tablets */
+    --h1-font-size: 56px; /* Larger font size for headings */
+    --h2-font-size: 32px; /* Larger font size for subheadings */
+  
+    --h6-font-size: 16px; /* Larger font size for small headings */
+    
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --container: calc(100% - 118px);
+    --logo-width: 180px; /* Suitable for laptops */
+    --primary-font-size: 15px; /* More readable font size */
+    --h1-font-size: 66px; /* Larger font size for headings */
+    --h2-font-size: 38px; /* Larger font size for subheadings */
+    --h6-font-size: 17px; /* Larger font size for small headings */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --primary-font-size: 16px;
+    --container: calc(100% - 236px);
+    --logo-width: 245px; /* Maximum logo width for large screens */
+    --h1-font-size: 76px; /* Larger font size for headings */
+    --h2-font-size: 48px; /* Larger font size for subheadings */
+  
+    --h6-font-size: 18px; /* Larger font size for small headings */
+  }
+}

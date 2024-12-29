@@ -133,34 +133,22 @@ html {
 
 /* Hero Section */
 .hero {
-  height: 100dvh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  color: white;
-  padding: 0 20px;
   position: relative;
-  overflow: hidden;
-}
-
-.shift-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100vh; /* Fills the entire viewport */
   width: 100%;
-  height: 100%;
-  overflow: hidden; /* Ensures content doesn’t spill */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents content spill */
 }
 
-.shift-no-repeat canvas {
-  object-fit: cover; /* Ensures the pattern fills without repeating */
-  background-repeat: no-repeat; /* Prevents repetition of patterns */
+.shift-wrapper canvas {
+  height: 10vh !important;
 }
 .ambient-canvas {
   height: 100dvh;
   overflow: hidden;
 }
-
 /* Optional: Add a subtle overlay for better contrast */
 .hero::before {
   content: "";
@@ -236,6 +224,7 @@ html {
 
 .container-section {
   background-image: var(--background-color);
+  z-index: 1000;
 }
 
 /* title setion  */
@@ -570,7 +559,7 @@ html {
   width: 100%;
 }
 .image-bg {
-  background-image: url(/images/image\ 18.png);
+  background-image: url(../images/image\ 18.png);
   background-size: cover;
 }
 .Code {

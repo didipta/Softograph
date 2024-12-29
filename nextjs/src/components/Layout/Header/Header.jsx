@@ -1,24 +1,49 @@
-import React from "react";
-import style from "./header.module.css";
+"use client";
+import React, { useState } from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
-    <nav className={style.navbar}>
-      <div className={`${style.navbarContainer} container`}>
-        <button className={style.menuToggle} id="menu-toggle">
-          <i className="fa-solid fa-bars"></i>
+    <nav className="navbar">
+      <div className="navbar-container container">
+        {/* Mobile Menu Toggle */}
+        <button
+          className="menu-toggle"
+          id="menu-toggle"
+          onClick={handleMenuToggle}
+        >
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{
+              color: "#fff",
+              fontSize: "1.5rem",
+            }}
+          />
         </button>
-        <div className={style.logo}>
+
+        {/* Logo */}
+        <div className="logo">
           <a href="#">
             <img src="/images/logo.png" alt="logo" />
           </a>
         </div>
 
-        <div className={style.navMenu} id="nav-menu">
-          <ul className={style.navLinks} id="nav-links">
-            <li>
+        {/* Navigation Links */}
+        <div className={`nav-menu`} id="nav-menu">
+          <ul
+            className={`nav-links ${menuActive ? "active" : ""}`}
+            id="nav-links"
+          >
+            <li className="nav-item">
               <a href="#">Offerings</a>
-              <ul className={style.dropdown}>
+              <ul className="dropdown">
                 <li>
                   <a href="#">Code that Knows You</a>
                 </li>
@@ -33,21 +58,23 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="#">Solutions</a>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="#">Partners</a>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="#">Insights</a>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="#">Career</a>
             </li>
           </ul>
         </div>
-        <button className={style.contactBtn}>Get Started</button>
+
+        {/* Call-to-Action Button */}
+        <button className="contact-btn">Get Started</button>
       </div>
     </nav>
   );
