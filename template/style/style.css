@@ -9,6 +9,9 @@ body {
   font-family: "Manrope", serif;
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   width: var(--container);
@@ -567,8 +570,7 @@ body {
   width: 100%;
   padding: 50px;
 }
-.Code .section-title-all
-{
+.Code .section-title-all {
   margin-bottom: 30px;
 }
 .Code .section-title-all p {
@@ -581,6 +583,5 @@ body {
   margin-top: 20px;
 }
 .slider-vertical {
-  max-height: 500px;
-  height: 100%;
+  height: 500px;
 }

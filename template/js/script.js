@@ -77,10 +77,11 @@ $(".slider-one").slick({
 $(document).ready(function () {
   const slider = $(".slider-vertical");
 
+  // Initialize the Slick slider
   slider.slick({
     dots: false,
     arrows: false,
-    infinite: false,
+    infinite: false, // Disable infinite scrolling
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
@@ -88,28 +89,39 @@ $(document).ready(function () {
     swipeToSlide: true,
   });
 
-  // Custom mouse scroll handling
+  // Smooth scrolling for the slider
   slider.on("wheel", function (e) {
     e.preventDefault();
-    if (e.originalEvent.deltaY < 0) {
+
+    const delta = e.originalEvent.deltaY;
+    const currentSlide = slider.slick("slickCurrentSlide");
+    const totalSlides = slider.slick("getSlick").slideCount;
+
+    if (delta < 0) {
       // Scroll up
-      slider.slick("slickPrev");
+      if (currentSlide > 0) {
+        slider.slick("slickPrev");
+      } else {
+        // Allow page scroll up when at the first slide
+        smoothScroll($(window).scrollTop() - 150); // Adjust offset for smoother transition
+      }
     } else {
       // Scroll down
-      slider.slick("slickNext");
+      if (currentSlide < totalSlides - 1) {
+        slider.slick("slickNext");
+      } else {
+        // Allow page scroll down when at the last slide
+        smoothScroll($(window).scrollTop() + 150); // Adjust offset for smoother transition
+      }
     }
   });
 
-  // Prevent slider from blocking page scroll when it reaches its ends
-  slider.on("afterChange", function (event, slick, currentSlide) {
-    const totalSlides = slick.slideCount;
-
-    if (currentSlide === 0 && slick.slickPrev) {
-      $(window).off("wheel");
-    } else if (currentSlide === totalSlides - 1 && slick.slickNext) {
-      $(window).off("wheel");
-    } else {
-      $(window).on("wheel");
-    }
-  });
+  // Smooth scroll function
+  function smoothScroll(targetPosition) {
+    $("html, body").stop().animate(
+      { scrollTop: targetPosition },
+      600, // Duration of scroll in milliseconds
+      "swing" // Easing function for smoothness
+    );
+  }
 });
