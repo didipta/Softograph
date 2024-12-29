@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
   font-family: "Manrope", serif;
+  color: white;
 }
 
 .container {
@@ -24,7 +28,6 @@ body {
 }
 .logo a img {
   width: var(--logo-width);
-  
 }
 
 .navbar-container {
@@ -38,6 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 20px;
 }
 
 .contact-btn {
@@ -119,11 +123,66 @@ body {
 
 /* hero  */
 
+/* Hero Section */
 .hero {
-  background-image: linear-gradient(
-    180deg,
-    rgba(19, 27, 50, 0.4) 0%,
-    #10172a 91.31%
-  );
   height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Add a subtle overlay for better contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(19, 27, 50, 0.4) 0%, #10172a 91.31%);
+  z-index: 1;
+}
+
+/* Content Styling */
+.hero .container {
+  position: relative;
+  z-index: 2; /* Ensures text is above the overlay */
+  max-width: var(--container);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-text {
+  font-size:  var(--h6-font-size);
+  font-weight: 300;
+  margin-bottom: 26px;
+  letter-spacing: 0.1rem;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-size: var(--h1-font-size);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Smooth Animation on Load */
+.hero-text,
+.hero-title {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

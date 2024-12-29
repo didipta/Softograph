@@ -14,6 +14,8 @@
   :root {
     --container: calc(100% - 15px);
     --logo-width: 120px; /* Adjusted for smaller screens */
+    --h1-font-size: 36px; /* Larger font size for headings */
+    --h6-font-size: 14px; /* Larger font size for small headings */
   }
 }
 
@@ -22,6 +24,9 @@
   :root {
     --container: calc(100% - 30px);
     --logo-width: 150px; /* Balanced size for small devices */
+    --h1-font-size: 46px; /* Larger font size for headings */
+    --h2-font-size: 32px; /* Larger font size for subheadings */
+    --h6-font-size: 15px; /* Larger font size for small headings */
   }
 }
 
@@ -30,6 +35,10 @@
   :root {
     --container: calc(100% - 59px);
     --logo-width: 160px; /* Slightly larger for tablets */
+    --h1-font-size: 56px; /* Larger font size for headings */
+    --h2-font-size: 36px; /* Larger font size for subheadings */
+    --h6-font-size: 16px; /* Larger font size for small headings */
+    
   }
 }
 
@@ -39,6 +48,9 @@
     --container: calc(100% - 118px);
     --logo-width: 180px; /* Suitable for laptops */
     --primary-font-size: 15px; /* More readable font size */
+    --h1-font-size: 66px; /* Larger font size for headings */
+    --h2-font-size: 40px; /* Larger font size for subheadings */
+    --h6-font-size: 17px; /* Larger font size for small headings */
   }
 }
 
@@ -48,5 +60,8 @@
     --primary-font-size: 16px;
     --container: calc(100% - 236px);
     --logo-width: 245px; /* Maximum logo width for large screens */
+    --h1-font-size: 76px; /* Larger font size for headings */
+    --h2-font-size: 48px; /* Larger font size for subheadings */
+    --h6-font-size: 18px; /* Larger font size for small headings */
   }
 }
