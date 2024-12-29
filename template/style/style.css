@@ -1,13 +1,5 @@
-/* root variables */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
-  --background-color: linear-gradient(180deg, #11192f 0%, #03050a 100%);
-  --primary-color: #007bff;
-  --primary-font-size: 16px;
-  --small-font-size: 12px;
-  --border-radius: 8px;
-}
-/* General Reset */
+
 body {
   margin: 0;
   padding: 0;
@@ -15,14 +7,14 @@ body {
 }
 
 .container {
-  width: calc(100% - 236px);
+  width: var(--container);
   margin: 0 auto;
   padding: 0px;
 }
 
 .navbar {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -31,12 +23,13 @@ body {
   z-index: 1000;
 }
 .logo a img {
-  width: 100px;
+  width: var(--logo-width);
+  
 }
 
 .navbar-container {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -47,11 +40,12 @@ body {
   width: 100%;
 }
 
-.nav-menu button {
+.contact-btn {
+  width: 157px;
   background-color: transparent;
   color: white;
   border: 1px solid white;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 0px;
   border-radius: var(--border-radius);
   cursor: pointer;
   text-transform: uppercase;
@@ -113,13 +107,14 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0 10px;
 }
 
-.menu-toggle .bar {
-  background-color: white;
-  height: 3px;
-  width: 25px;
-  margin: 3px 0;
+.menu-toggle i {
+  color: white;
+  font-size: 1.2rem;
 }
 
 /* hero  */

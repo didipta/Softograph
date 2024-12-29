@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .logo a img {
+      width: 150px;
+      height: 30px;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-image: var(--background-color);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .contact-btn {
+      width: 300px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+    }
+  
+    .dropdown {
+      position: static;
+      box-shadow: none;
+    }
+  
+    .dropdown a {
+      padding: 10px;
+    }
+  }
+  
