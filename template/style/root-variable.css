@@ -16,7 +16,7 @@
     --container: calc(100% - 15px);
     --logo-width: 120px; /* Adjusted for smaller screens */
     --h1-font-size: 36px; /* Larger font size for headings */
-    --h2-font-size: 20px; /* Larger font size for subheadings */
+    --h2-font-size: 24px; /* Larger font size for subheadings */
     --h6-font-size: 14px; /* Larger font size for small headings */
   }
 }
@@ -27,7 +27,7 @@
     --container: calc(100% - 30px);
     --logo-width: 150px; /* Balanced size for small devices */
     --h1-font-size: 46px; /* Larger font size for headings */
-    --h2-font-size: 24px; /* Larger font size for subheadings */
+    --h2-font-size: 28px; /* Larger font size for subheadings */
     --h6-font-size: 15px; /* Larger font size for small headings */
   }
 }
@@ -38,7 +38,7 @@
     --container: calc(100% - 59px);
     --logo-width: 160px; /* Slightly larger for tablets */
     --h1-font-size: 56px; /* Larger font size for headings */
-    --h2-font-size: 28px; /* Larger font size for subheadings */
+    --h2-font-size: 32px; /* Larger font size for subheadings */
     --h6-font-size: 16px; /* Larger font size for small headings */
     
   }

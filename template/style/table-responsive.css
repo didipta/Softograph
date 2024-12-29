@@ -45,5 +45,32 @@
       padding: 60px 50px;
    
     }
+
+    .section-div-common {
+      margin-top: 80px;
+      
+    }
+
+    .scetion-left-side {
+     display: none;
+    }
+
+    .slider-container {
+    
+      padding-left: 20px;
+    }
+
+
+    .left {
+   
+      right: 100px;
+      margin-top: -80px;
+      
+    }
+    .right {
+      right: 75px;
+      margin-top: -80px;
+      
+    }
   }
   
