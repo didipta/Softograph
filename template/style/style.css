@@ -268,6 +268,7 @@ body {
 .section-title-all h2 {
   font-size: var(--h2-font-size);
   font-weight: 200;
+  line-height: 77px;
 }
 
 /* slick slider  */
@@ -454,7 +455,6 @@ body {
 
 /* Footer Styling */
 .footer {
-  background-color: #0a0e17; /* Dark background */
   color: #ffffff; /* White text for contrast */
   padding: 100px 20px; /* Increase padding for a spacious layout */
   margin-top: 80px;
@@ -548,5 +548,6 @@ body {
   transform: scale(1.1); /* Slight scaling effect */
 }
 
-
-
+.Designed {
+  width: 100%;
+}
