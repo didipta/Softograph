@@ -49,7 +49,7 @@ const Header = () => {
         {/* Logo */}
         <div className="logo">
           <a href="#">
-            <img src="/images/logo.png" alt="logo" />
+            <img src="images/Logo.png" alt="logo" />
           </a>
         </div>
 

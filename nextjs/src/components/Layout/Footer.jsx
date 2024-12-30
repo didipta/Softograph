@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container container">
         <div className="footer-column">
           <div className="footer-logo">
-            <img src="images/logo.png" alt="Softograph Logo" />
+            <img src="images/Logo.png" alt="Softograph Logo" />
           </div>
           <p>Address: House # 52 Road-04, Dhaka 1230</p>
           <p>Phone: +88 01911-082908</p>
