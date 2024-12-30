@@ -475,8 +475,7 @@ html {
 .footer {
   background-image: var(--background-color);
   color: #ffffff; /* White text for contrast */
-  padding: 100px 20px; /* Increase padding for a spacious layout */
-  padding-top: 80px;
+  padding: 100px 0px; /* Increase padding for a spacious layout */
   font-family: "Arial", sans-serif; /* Clean, readable font */
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
 }
@@ -486,13 +485,13 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  row-gap: 40px; /* Add vertical spacing between rows */
+  row-gap: 50px; /* Add vertical spacing between rows */
 }
 
 .footer-column {
   flex: 1;
   min-width: 200px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .footer-logo img {
@@ -501,7 +500,7 @@ html {
 }
 
 .footer-column h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #fcfcfc; /* Accent color for headers */
@@ -531,7 +530,7 @@ html {
 .footer-column ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.3s ease;
   opacity: 0.9; /* Subtle fade effect */
 }
